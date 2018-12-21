@@ -26,8 +26,12 @@ class DisabledTabs extends React.Component {
           <Tab label="Active" />
         </Tabs>
       </Paper>
+      
+
     );
   }
 }
+
+
 
 export default DisabledTabs;

@@ -19,7 +19,7 @@ function ImageAvatars(props) {
 	  const { classes } = props;
 	  return (
 		      <Grid container justify="center" alignItems="center">
-		        <Avatar alt="Remy Sharp" src="/static//avatar/image.png" className={classes.avatar} />
+		        <Avatar alt="Remy Sharp" src="images/crystal.png" className={classes.avatar} />
 		        <Avatar alt="Remy Sharp" src="/static/images/avatar/image." className={classes.bigAvatar} />
 		      </Grid>
 		    );

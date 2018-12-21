@@ -29,24 +29,6 @@ const tileData = [
 		author: 'author',
 		cols: 1,
 	},
-	{
-		img: images,
-		title: 'Image',
-		author: 'author',
-		cols: 1,
-	},
-	{
-		img: images,
-		title: 'Image',
-		author: 'author',
-		cols: 1,
-	},
-	{
-		img: images,
-		title: 'Image',
-		author: 'author',
-		cols: 1,
-	}
 
 
 ]

@@ -7,10 +7,10 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Avatar from '@material-ui/core/Avatar';
-import Header from './Header';
+import Radio from '@material-ui/core/Radio';
 import Footer from './Footer';
 import Button from './Button';
-import Radio from '@material-ui/core/Radio';
+import LeftPane from './LeftPane'
 import GridList from './GridList';
 
 
@@ -33,7 +33,6 @@ function ButtonAppBar(props) {
 	  return (
 		      <div className={classes.root}>
 		        <AppBar position="static">
-						<Header></Header>
 						<Avatar></Avatar>
 		          <Toolbar>
 		            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
@@ -47,10 +46,13 @@ function ButtonAppBar(props) {
 		        </AppBar>
 						<div>
 					<Radio/>
+
 					</div>
 					<Footer></Footer>
+					<LeftPane/>
 					<GridList></GridList>
 		      </div>
+
 
 		    );
 }
