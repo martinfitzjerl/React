@@ -10,8 +10,9 @@ import Avatar from '@material-ui/core/Avatar';
 import Radio from '@material-ui/core/Radio';
 import Footer from './Footer';
 import Button from './Button';
-import LeftPane from './LeftPane'
 import GridList from './GridList';
+import SimpleList from './SimpleList';
+import RightPane from './RightPane';
 
 
 
@@ -43,19 +44,34 @@ function ButtonAppBar(props) {
 		            </Typography>
 		            <Button color="inherit">Login</Button>
 		          </Toolbar>
+							
 		        </AppBar>
-						<div>
-					<Radio/>
+						<Radio></Radio>
 
-					</div>
-					<Footer></Footer>
-					<LeftPane/>
-					<GridList></GridList>
-		      </div>
+						<GridList>
 
+						</GridList>
+						<Footer/>
+						<SimpleList/>
+						<RightPane/>
+
+    </div>
+
+
+
+
+
+					
+
+
+
+										
 
 		    );
 }
+
+
+
 
 ButtonAppBar.propTypes = {
 	  classes: PropTypes.object.isRequired,

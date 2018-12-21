@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 //import tileData from './tileData';
-import images from './images/crystal.png'
+import image from './images/crystal.png'
 
 
 const styles = theme => ({
@@ -24,7 +24,7 @@ const styles = theme => ({
 
 const tileData = [
 	{
-		img: images,
+		img: image,
 		title: 'Image',
 		author: 'author',
 		cols: 1,
