@@ -4,9 +4,16 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Avatar from '@material-ui/core/Avatar';
+import Header from './Header';
+import Footer from './Footer';
+import Button from './Button';
+import Radio from '@material-ui/core/Radio';
+import GridList from './GridList';
+
+
 
 const styles = {
 	  root: {
@@ -26,6 +33,8 @@ function ButtonAppBar(props) {
 	  return (
 		      <div className={classes.root}>
 		        <AppBar position="static">
+						<Header></Header>
+						<Avatar></Avatar>
 		          <Toolbar>
 		            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
 		              <MenuIcon />
@@ -36,7 +45,13 @@ function ButtonAppBar(props) {
 		            <Button color="inherit">Login</Button>
 		          </Toolbar>
 		        </AppBar>
+						<div>
+					<Radio/>
+					</div>
+					<Footer></Footer>
+					<GridList></GridList>
 		      </div>
+
 		    );
 }
 
