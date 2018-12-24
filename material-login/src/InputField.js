@@ -21,25 +21,17 @@ const styles = theme => ({
   },
 });
 
-const ranges = [
-  {
-    value: '0-20',
-    label: '0 to 20',
-  },
-  {
-    value: '21-50',
-    label: '21 to 50',
-  },
-  {
-    value: '51-100',
-    label: '51 to 100',
-  },
-];
 
 class OutlinedInputAdornments extends React.Component {
   state = {
-    password: '',
     username: '',
+    IDdocumentNumber: '',
+    city: '',
+    country: '',
+    age: '',
+    email: '',
+    mobileNumber: '',
+    password: '',
     showPassword: false,
   };
 
@@ -63,6 +55,66 @@ class OutlinedInputAdornments extends React.Component {
           label="Username"
           value={this.state.username}
           onChange={this.handleChange('username')}
+
+
+        />
+          <TextField
+          id="outlined-adornment-IDdocumentNumber"
+          className={classNames(classes.margin, classes.textField)}
+          variant="outlined"
+          label="IDdocumentNumber"
+          value={this.state.IDdocumentNumber}
+          onChange={this.handleChange('IDdocumentNumber')}
+
+
+        />
+          <TextField
+          id="outlined-adornment-city"
+          className={classNames(classes.margin, classes.textField)}
+          variant="outlined"
+          label="city"
+          value={this.state.city}
+          onChange={this.handleChange('city')}
+
+
+        />
+          <TextField
+          id="outlined-adornment-country"
+          className={classNames(classes.margin, classes.textField)}
+          variant="outlined"
+          label="country"
+          value={this.state.country}
+          onChange={this.handleChange('country')}
+
+
+        />
+          <TextField
+          id="outlined-adornment-age"
+          className={classNames(classes.margin, classes.textField)}
+          variant="outlined"
+          label="age"
+          value={this.state.age}
+          onChange={this.handleChange('age')}
+
+
+        />
+          <TextField
+          id="outlined-adornment-email"
+          className={classNames(classes.margin, classes.textField)}
+          variant="outlined"
+          label="email"
+          value={this.state.email}
+          onChange={this.handleChange('email')}
+
+
+        />
+          <TextField
+          id="outlined-adornment-mobileNumber"
+          className={classNames(classes.margin, classes.textField)}
+          variant="outlined"
+          label="mobileNumber"
+          value={this.state.mobileNumber}
+          onChange={this.handleChange('mobileNumber')}
 
 
         />

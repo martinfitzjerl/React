@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import logo from './investorCointwo.svg';
 import './App.css';
-import InputField from './InputField'
+import InputField from './InputField';
+import Avatar from './Avatar';
+import AppBar from './AppBar';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+      <Avatar/>
+      <AppBar/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
