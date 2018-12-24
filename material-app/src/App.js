@@ -18,6 +18,7 @@ import LeftPane from './LeftPane';
 
 
 
+
 const styles = {
 	  root: {
 		      flexGrow: 1,
@@ -59,10 +60,16 @@ function ButtonAppBar(props) {
 
 						<Grid container>
 						<Grid item sm>
-						<LeftPane/>
+						<LeftPane/>	
+						</Grid>					
+						<Grid item sm>
 						<RightPane/>
-</Grid>
-</Grid>
+						</Grid>
+						</Grid>
+
+
+
+
 <Footer/>
 
     </div>
