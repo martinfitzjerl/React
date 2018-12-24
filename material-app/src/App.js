@@ -8,11 +8,13 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Avatar from '@material-ui/core/Avatar';
 import Radio from '@material-ui/core/Radio';
+import Grid from '@material-ui/core/Grid';
 import Footer from './Footer';
 import Button from './Button';
 import GridList from './GridList';
 import SimpleList from './SimpleList';
 import RightPane from './RightPane';
+import LeftPane from './LeftPane';
 
 
 
@@ -51,9 +53,17 @@ function ButtonAppBar(props) {
 						<GridList>
 
 						</GridList>
-						<Footer/>
+						
 						<SimpleList/>
+
+
+						<Grid container>
+						<Grid item sm>
+						<LeftPane/>
 						<RightPane/>
+</Grid>
+</Grid>
+<Footer/>
 
     </div>
 

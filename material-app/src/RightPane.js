@@ -1,12 +1,11 @@
 import React from 'react'
-import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
 import image2 from './images/cubePlaceholder2.png'
 import image3 from './images/cubePlaceholder3.png'
 
 
 const style = {
-    Paper: { padding: 20, marginTop: 10, marginBottom: 10 }
+    Paper: { padding: 20, marginTop: 10, marginBottom: 10, marginLeft: 1000 }
 }
 
 const tileData = [
@@ -28,8 +27,7 @@ const tileData = [
 ]
 
 export default props =>
-<Grid container>
-<Grid item sm>
+
 
 
 
@@ -40,6 +38,5 @@ export default props =>
 				            </Paper>
 				          ))}
 		        </Paper>
-</Grid>
-</Grid>
+
 
