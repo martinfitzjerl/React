@@ -94,7 +94,7 @@ class DialogBox extends React.Component {
           <br />
         <Typography variant="subtitle1">Selected: {this.state.selectedValue}</Typography>
         <br />
-        <Button variant="raised" color="secondary" onClick={this.handleClickOpen}>
+        <Button variant="contained" color="secondary" onClick={this.handleClickOpen}>
           Accounts
         </Button>
         <SimpleDialogWrapped

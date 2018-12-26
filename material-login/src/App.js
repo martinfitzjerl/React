@@ -8,6 +8,7 @@ import Avatar from './Avatar';
 import AppBar from './AppBar';
 import FormDialog from './FormDialog';
 import logo from './investorCointwo.svg';
+import Investments from './Investments';
 
 
 import DialogBox from './DialogBox';
@@ -22,6 +23,26 @@ const styles = theme => ({
 });
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      investments: [
+        {
+          title: 'Account One',
+          category: 'Vegetables'
+        },
+        {
+          title: 'Account Two',
+          category: 'Meats'
+        },
+        {
+          title: 'Account Three',
+          category: 'Grains'
+        },
+
+      ]
+    }
+  }
   render() {
     return (
       <div className="App">
@@ -48,14 +69,21 @@ class App extends Component {
         </header>
         <InputField/>
 
-        <form>
+
         <div>
       <Fab variant="extended" aria-label="Login" color="primary" >
         <AccountBoxIcon   />
         LOGIN
       </Fab>
     </div>
+
+    <br/>
+    <div className="App-Investments">
+    <form>
+    <Investments investments={this.state.investments}/>
         </form>
+    </div>
+
       </div>
 
     );
