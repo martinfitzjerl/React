@@ -20,6 +20,13 @@
 
 .App-link {
   color: #61dafb;
+  margin-left: 20px;
+}
+
+.App-formdialog{
+  animation: App-formdialog infinite 10s ease-out;
+  height: 20vmin;
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -29,4 +36,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes App-formdialog {
+  0% {
+    transform: translate(0px, 0px) rotateZ(0.001deg);  
+    animation-timing-function:ease-in-out
+   }
+   50% {
+     transform: translate(0px, 12px) rotateZ(0.001deg);
+     animation-timing-function:ease-in-out
+   }
+   100% {
+    transform: translate(0px, 0px) rotateZ(0.001deg);
+    animation-timing-function:ease-in-out
+   }
 }

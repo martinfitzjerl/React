@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import logo from './investorCointwo.svg';
-import { withStyles } from '@material-ui/core/styles';
 import './App.css';
+import { withStyles } from '@material-ui/core/styles';
+import Fab from '@material-ui/core/Fab';
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import InputField from './InputField';
 import Avatar from './Avatar';
 import AppBar from './AppBar';
-import Fab from '@material-ui/core/Fab';
-import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import FormDialog from './FormDialog';
+import logo from './investorCointwo.svg';
+
+
+import DialogBox from './DialogBox';
 
 const styles = theme => ({
   fab: {
@@ -36,18 +40,21 @@ class App extends Component {
           >
             New Investors
           </a>
+          <DialogBox/>
+          <br />
+          <div className="App-formdialog">
+          <FormDialog/>
+          </div>
         </header>
         <InputField/>
+
         <form>
         <div>
       <Fab variant="extended" aria-label="Login" color="primary" >
         <AccountBoxIcon   />
         LOGIN
-        
       </Fab>
-
     </div>
-
         </form>
       </div>
 
