@@ -58,6 +58,21 @@ export default class FormDialog extends React.Component {
   render() {
     const {username} = this.state
     console.log({username});
+    const {IDdocumentNumber} = this.state
+    console.log({IDdocumentNumber});
+    const {city} = this.state
+    console.log({city});
+    const {country} = this.state
+    console.log({country});
+    const {age} = this.state
+    console.log({age});
+    const {email} = this.state
+    console.log({email});
+    const {mobileNumber} = this.state
+    console.log({mobileNumber});
+    const {password} = this.state
+    console.log({password});
+
     return (
       <div>
 
@@ -93,7 +108,7 @@ export default class FormDialog extends React.Component {
               type="text"
               name="IDdocumentNumber"
               //value={this.state.form.IDdocumentNumber}
-              //onChange={this.handleChange('IDdocumentNumber')}
+              onChange={this.handleChange('IDdocumentNumber')}
               fullWidth
             />
             <TextField
@@ -103,7 +118,7 @@ export default class FormDialog extends React.Component {
               type="text"
               name="city"
               //value={this.state.form.city}
-              //onChange={this.handleChange('city')}
+              onChange={this.handleChange('city')}
               fullWidth
             />
             <TextField
@@ -113,7 +128,7 @@ export default class FormDialog extends React.Component {
               type="text"
               name="country"
               //value={this.state.form.country}
-              //onChange={this.handleChange('country')}
+              onChange={this.handleChange('country')}
               fullWidth
             />
             <TextField
@@ -123,7 +138,7 @@ export default class FormDialog extends React.Component {
               type="text"
               name="age"
               //value={this.state.form.age}
-              //onChange={this.handleChange('age')}
+              onChange={this.handleChange('age')}
               fullWidth
             />
             <TextField
@@ -133,7 +148,7 @@ export default class FormDialog extends React.Component {
               type="text"
               name="email"
               //value={this.state.form.email}
-              //onChange={this.handleChange('email')}
+              onChange={this.handleChange('email')}
               fullWidth
             />
             <TextField
@@ -143,7 +158,7 @@ export default class FormDialog extends React.Component {
               type="text"
               name="mobileNumber"
               //value={this.state.form.mobileNumber}
-              //onChange={this.handleChange('mobileNumber')}
+              onChange={this.handleChange('mobileNumber')}
               fullWidth
             />
             <TextField
@@ -153,7 +168,7 @@ export default class FormDialog extends React.Component {
               type="password"
               name="password"
               //value={this.state.form.password}
-              //onChange={this.handleChange('password')}
+              onChange={this.handleChange('password')}
               fullWidth
             />
             </form>

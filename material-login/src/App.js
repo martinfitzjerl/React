@@ -50,6 +50,7 @@ class App extends Component {
       <Avatar/>
       <AppBar/>
         <header className="App-header">
+        <br/>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Welcome Investors, please login.
