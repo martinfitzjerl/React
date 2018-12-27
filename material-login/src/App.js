@@ -8,7 +8,8 @@ import Avatar from './Avatar';
 import AppBar from './AppBar';
 import FormDialog from './FormDialog';
 import logo from './investorCointwo.svg';
-import Investments from './Investments';
+
+
 
 
 import DialogBox from './DialogBox';
@@ -64,7 +65,7 @@ class App extends Component {
           <DialogBox/>
           <br />
           <div className="App-formdialog">
-          <FormDialog/>
+          <FormDialog />
           </div>
         </header>
         <InputField/>
@@ -79,10 +80,9 @@ class App extends Component {
 
     <br/>
     <div className="App-Investments">
-    <form>
-    <Investments investments={this.state.investments}/>
-        </form>
+
     </div>
+
 
       </div>
 

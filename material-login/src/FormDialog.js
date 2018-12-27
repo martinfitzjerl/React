@@ -8,8 +8,24 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 export default class FormDialog extends React.Component {
+  constructor(props){
+    super(props)
+      this.state = {
+        open: false,
+        form: {
+          username: '',
+          IDdocumentNumber: '',
+          city: '',
+          country: '',
+          age: '',
+          email: '',
+          mobileNumber: '',
+          password: '',
+        }
+      }
+  }
   state = {
-    open: false,
+
   };
 
   handleClickOpen = () => {
@@ -20,9 +36,31 @@ export default class FormDialog extends React.Component {
     this.setState({ open: false });
   };
 
+  handleSubmit = (event) => {
+    event.preventDefault()
+    const data = this.state
+    console.log("Final data", data)
+  }
+
+  handleChange = (event) => event => {
+    event.preventDefault()
+    this.setState({
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  // componentDidMount(){
+  //   this.setState({
+  //     username: "test"
+  //   })
+  // }
+
   render() {
+    const {username} = this.state
+    console.log({username});
     return (
       <div>
+
         <Button variant="contained" color="secondary" onClick={this.handleClickOpen}>
           Register
         </Button>
@@ -36,54 +74,76 @@ export default class FormDialog extends React.Component {
             <DialogContentText>
               To Login to this website, please enter your email address and phone number here.
             </DialogContentText>
+            <form onSubmit={this.handleSubmit} className= "Dialog-Form">
             <TextField
               autoFocus
               margin="dense"
               id="username"
               label="Username"
-              type="username"
+              type="text"
+              name="username"
+              //value={this.state.form.username}
+              onChange={this.handleChange('username')}
               fullWidth
             />
             <TextField
               margin="dense"
               id="IDdocumentNumber"
               label="ID Document Number"
-              type="IDdocumentNumber"
+              type="text"
+              name="IDdocumentNumber"
+              //value={this.state.form.IDdocumentNumber}
+              //onChange={this.handleChange('IDdocumentNumber')}
               fullWidth
             />
             <TextField
               margin="dense"
               id="city"
               label="City"
-              type="city"
+              type="text"
+              name="city"
+              //value={this.state.form.city}
+              //onChange={this.handleChange('city')}
               fullWidth
             />
             <TextField
               margin="dense"
               id="country"
               label="Country"
-              type="country"
+              type="text"
+              name="country"
+              //value={this.state.form.country}
+              //onChange={this.handleChange('country')}
               fullWidth
             />
             <TextField
               margin="dense"
               id="age"
               label="Age"
-              type="age"
+              type="text"
+              name="age"
+              //value={this.state.form.age}
+              //onChange={this.handleChange('age')}
               fullWidth
             />
             <TextField
               margin="dense"
               id="email"
               label="Email Address"
-              type="email"
+              type="text"
+              name="email"
+              //value={this.state.form.email}
+              //onChange={this.handleChange('email')}
               fullWidth
             />
             <TextField
               margin="dense"
               id="mobileNumber"
               label="Mobile Number"
-              type="mobileNumber"
+              type="text"
+              name="mobileNumber"
+              //value={this.state.form.mobileNumber}
+              //onChange={this.handleChange('mobileNumber')}
               fullWidth
             />
             <TextField
@@ -91,8 +151,13 @@ export default class FormDialog extends React.Component {
               id="password"
               label="Password"
               type="password"
+              name="password"
+              //value={this.state.form.password}
+              //onChange={this.handleChange('password')}
               fullWidth
             />
+            </form>
+
 
           </DialogContent>
           
