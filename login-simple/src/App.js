@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Form from './Form';
 import logo from './images/greenfields.png';
 import sideimage from './images/sideimage.bmp';
+import FormDialog from './FormDialog';
 import './App.css';
 
 class App extends Component {
@@ -21,13 +22,24 @@ class App extends Component {
           </h1>
         </div>
 
+        <div className="App-register">
+          <FormDialog />
 
+        </div>
 
         <div className="App-main">
           <p>Welcome please login or register!</p>
           <br/>
-          <Form/>
+          <Form /> 
         </div>
+
+
+
+
+
+
+
+
 
 
         <div className="App-privacyLink">

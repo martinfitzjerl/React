@@ -20,18 +20,15 @@ import FormControl from '@material-ui/core/FormControl';
 
 
 const styles = theme => ({
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-  },
   textField: {
     marginLeft: theme.spacing.unit,
     marginRight: theme.spacing.unit,
     width: 400,
   },
   button: {
-    margin: '20px',
-    height: '20px',
+    marginRight: '200px',
+
+
   },
   checkBox: {
 
@@ -144,15 +141,17 @@ class TextFields extends React.Component {
 
 
 
+
         <Button onClick={this.clicked} variant="contained" className={classes.button}>
             Login
         </Button>
-        
-        <Button onClick={this.clicked} variant="contained" className={classes.button}>
-            Sign Up
-        </Button>
+
+
         
 
+
+
+      
         
         
       </form>
